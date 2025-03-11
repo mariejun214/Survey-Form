@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MJ Dhongz Magic Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  
+  <body>
+    <h1 id="title">MJ Dhongz Magic Survey Form</h1>
+    <p id="description">Thank you for visiting MJ Dhongz Magic! Your 
+      feedback helps us enhance our services. 
+      Please take a few minutes to share your experience and 
+      suggestions. Your input is greatly appreciated!</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name <input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+      <label id="email-label" for="email">Email <input id="email" type="email" name="email" placeholder="Enter your email" required/></label>
+      <label id="number-label" for="number">Age <input id="number" type="number" name="number" min="18" max="100" placeholder="Age"/></label>
+
+      <label id="role">Which option best describes your current role? 
+        <select id="dropdown" name="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Party Shop Owner</option>
+          <option value="2">Event Organizer</option>
+          <option value="3">Talent Manager</option>
+          <option value="4">Regular Client</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+
+      <legend id="recommendation">Would you recommend MJ Dhongz Magic to others?
+        <label for="definitely"><input id="definitely" type="radio" value="6" name="recommend" class="inline" checked/>Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" value="7" name="recommend" class="inline"/> Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" value="8" name="recommend" class="inline"/> Not sure</label>
+      </legend>
+
+      <legend>What would you like to see improved? (check all that apply)
+        <label for="magic-show"><input class="inline" id="magic-show" type="checkbox" name="to-improve" value="a"/> Magic Show</label>
+        <label for="illusion-show"> <input class="inline" id="illusion-show" type="checkbox" name="to-improve" value="b"/> Illusion Show</label>
+        <label for="closeup-magic"><input class="inline" id="closeup-magic" type="checkbox" name="to-improve" value="c"/> Close-up Magic</label>
+        <label for="walk-around-magic"><input class="inline" id="walk-around-magic" type="checkbox" name="to-improve" value="d"/> Walk-around Magic</label>
+        <label for="clowns"><input class="inline" id="clowns" type="checkbox" name="to-improve" value="e"/> Clowns</label>
+        <label for="balloon-twisting"><input class="inline" id="balloon-twisting" type="checkbox" name="to-improve" value="f"/> Balloon Twisting</label>
+        <label for="bubble-show"><input class="inline" id="bubble-show" type="checkbox" name="to-improve" value="g"/> Bubble Show</label>
+        <label for="puppet-show"><input class="inline" id="puppet-show" type="checkbox" name="to-improve" value="h"/> Puppet Show</label>
+        <label for="acrobatic-show"><input class="inline" id="acrobatic-show" type="checkbox" name="to-improve" value="i"/> Acrobatic Show</label>
+      </legend>
+      
+      <label id="comments"for="comments-and-suggestions">Any comments or suggestions?
+        <textarea id="comments-and-suggestions" name="bio" rows="10" cols="60" placeholder="Enter your comment here..."></textarea>
+      </label>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+  
+</html>
+
+
+
